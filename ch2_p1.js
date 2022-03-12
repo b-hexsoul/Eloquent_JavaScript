@@ -8,4 +8,4 @@ const theLoopingTriangle = (x) => {
   }
 };
 
-theLoopingTriangle(7);
+theLoopingTriangle(10);
