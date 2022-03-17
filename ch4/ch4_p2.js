@@ -28,4 +28,8 @@ function listToArray(list) {
   return arr;
 }
 
-console.log(listToArray(list));
+function prepend(element, list) {
+  return { value: element, rest: { ...list } };
+}
+
+console.log(prepend(0, list));
