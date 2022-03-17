@@ -20,4 +20,12 @@ function arrayToList(arr) {
   return newList;
 }
 
-console.log(arrayToList([1, 2, 3]));
+function listToArray(list) {
+  const arr = [];
+  for (let node = list; node !== null; node = node.rest) {
+    arr.push(node.value);
+  }
+  return arr;
+}
+
+console.log(listToArray(list));
